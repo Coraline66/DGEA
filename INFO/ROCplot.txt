@@ -1,0 +1,15 @@
+Title: ROC plots and boxplots for PPV and TPR
+Sent: Wednesday, September 28, 2016 at 1:41 PM
+
+Content:
+
+Dear Dr. Socci,
+
+Please find the roc plots and boxplots of ppv and sensitivity for deseq2 and edger in the attachment. 
+As for the roc plots, to make it easier for comparing each case(n= 3, 4, etc.), I stretch y-axis so that the points do not overlap. It seems that deseq2 provides a more accurate result with lower FDR when n is large, while edger provides a safer result with higher PPV when n is small.
+To be on the safe side, the original FDR and TPR data are also included in the file. 
+
+Thank you for your time.
+
+Regards,
+Coraline

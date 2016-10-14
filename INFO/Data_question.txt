@@ -1,0 +1,23 @@
+Title: Questions about extracting data from TCGA
+Sent: Tuesday, September 13, 2016 at 2:54 PM
+
+Content:
+
+Because most of the samples have only one htseq counts file which corresponds to tumor. Only a few of them have a control group with counts of normal tissue. I will use the 57 samples of luad then.
+
+Thanks for your time.
+
+Regards, 
+Coraline
+
+From: "Nicholas D. Socci" <soccin@mskcc.org>
+Date: Tuesday, September 13, 2016 at 2:47 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Question about Data_Coraline
+
+The htseq-counts files(tumor vs normal) for TCGA-LUAD and TCGA-OV are not enough to obtain 100 samples. The maximum for luad is 57 and the number for ov is even smaller.
+
+Is that because there are two few normals?? If so go with 50 samples or as many as possible
+
+nick
+
