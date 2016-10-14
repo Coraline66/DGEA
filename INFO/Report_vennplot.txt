@@ -1,0 +1,49 @@
+Title: Report of differential gene analysis for TCGA-BRCA by deseq2 and edger (venn diagrams)
+Sent: Wednesday, August 24, 2016 at 6:12 PM
+
+Content:
+
+Dear Dr. Socci,
+
+I wrote a rmarkdown file including the differential gene expression analysis by using Deseq2 and edgeR, several venn diagrams showing the relation between their filtered results and a brief discussion about the plots. Please see the original htseq-counts datasets and rmarkdown file in the attachment. 
+
+There are several questions I want to ask for your suggestions. 
+I perform the differential analysis through "exactTest.()” in edgeR but “gemLRT()” and “glmQLFTest(0” are also frequently used for gene expression analysis. Are there any differences in these tests and the corresponding results, especially the adjusted p-value or FDR?
+In order to make the comparison more effective, I chose the genes with an absolute log2-fold change > 1.5 and(or) an adjusted p-value < 0.05. Is this a reasonable assumption or I have to make all genes into account?
+The total numbers of genes resulting from Deseq2 and edgeR and their intersections are shown in my graphs. However, I haven’t compared which genes are in the union parts and which are in the separate parts, e.g., the top 10 genes with smallest adjusted p-values in the union of Deseq2 and edgeR.
+As for other part of this report, I would greatly appreciate it if you give me some advice.
+Thank you for your time.
+
+Regards,
+Coraline
+
+
+Title: Modifications of report
+Sent: Monday, August 29, 2016 at 11:28 AM
+
+Content:
+
+Dear Dr. Socci,
+
+I made some modifications to the report and added the list of most “significant” genes(with smallest adjusted p-value and largest log2-fold change). A correlation test and graphical representation of the log2-fold change by both packages were also supplemented in the last part. Please find the updated version of my report and corresponding datasets in the attachment.
+
+Thank you for your time.
+
+Regards,
+Coraline
+
+
+Title: Report of 50 patients
+Sent: Friday, September 2, 2016 at 2:59 PM
+
+Content:
+
+Dear Dr. Socci,
+
+Good afternoon.
+Please find  my report of the differential gene expression analysis of 50 patients via deseq2 and edgeR in the attachment.
+
+Thank you for your time.
+
+Regards,
+Coraline

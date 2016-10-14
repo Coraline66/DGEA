@@ -1,0 +1,13 @@
+Title: Updated version of rcode for 100 patients from TCGA-BRCA
+Sent: Thursday, September 22, 2016 at 11:54 AM
+
+Content:
+
+Dear Dr. Socci,
+
+Attached is a brief r-code of the differential gene analysis of 100 patients(brca) in case you would like to see the updated version. I didn’t create a rmarkdown file because the code was splitted into several parts and run on cluster and it would be very time consuming to generate rmarkdown files. 
+
+Thank you for your time.
+
+Regards, 
+Coraline
