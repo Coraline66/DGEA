@@ -10,12 +10,35 @@ library(edgeR)
 library(parallel)
 
 # Generate Sample Matrix and Load Results 
+source("deseq2.R")
+source("edger.R")
+source("rangen.R")
+samp <- readRDS("samp3.RData")
 en_de <- readRDS("TSde_54_1000_1000.RData")
 en_ed <- readRDS("TSed_54_1000_1000.RData")
 in_de <- readRDS("in_de3.RData")
 in_ed <- readRDS("in_ed3.RData")
-fil_des <- readRDS("fil_de3.RData")
-fil_edg <- readRDS("fil_ed3.RData")
+
+# "fil" is a Self-Defined Function which Finds out Each Filtered 
+# Gene List and Calculate the Numbers of "FP", "TP", "FN" for them.
+source("fil.R")
+no_cores <- detectCores() - 1
+cl <- makeCluster(no_cores)
+clusterExport(cl=cl, c("N", "n", "samp", "en_de", "in_de", "en_ed", 
+                       "in_ed", "fil"),
+              envir=environment())
+k <- 1:N
+fil_des <- parLapply(cl, k,
+                     function(k) {
+                         fil(N, n, k, "d", samp, en_de, in_de, 
+                             en_ed, in_ed)
+                     })
+fil_edg <- parLapply(cl, k,
+                     function(k) {
+                         fil(N, n, k, "e", samp, en_de, in_de, 
+                             en_ed, in_ed)
+                     })
+stopCluster(cl)
 
 # Compute Sensitivity(true positive rate)
 sen_de <- lapply(1:N, function(i) {
@@ -34,6 +57,8 @@ fdr_ed <- lapply(1:N, function(i) {
 })
 
 # Save Data
+saveRDS(fil_des, file="fil54_de.3.RData")
+saveRDS(fil_edg, file="fil54_ed.3.RData")
 saveRDS(sen_de, file="sen54_de.3.RData")
 saveRDS(sen_ed, file="sen54_ed.3.RData")
 saveRDS(fdr_de, file="fdr54_de.3.RData")
