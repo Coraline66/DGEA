@@ -1,0 +1,42 @@
+Title: Plots using new truth sets
+Sent: Monday, November 14, 2016 at 9:55 AM
+
+Content:
+
+Dear Dr. Socci,
+
+Please see the data(new truth sets, TPR and PPV) for the plots in the attachment. The indices such as “fdr48_de33_1” represent the case wise FDR values for the first iteration, i.e., fdr48_de33_1[1:33] are the FDR values for the first iteration when n_sample = 3 and fdr48_de33_1[34:66] are the FDR values for the first iteration when n_sample = 4, etc., fdr48_de33_1[331:363] are the FDR values for the first iteration when n_sample = 45. 
+
+I am currently working on the case of 100 iterations for both LUAD and BRCA and hopefully I could get the results soon.
+
+Thanks for your time.
+
+Regards,
+Coraline
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Saturday, November 12, 2016 at 1:18 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Plots updated_Coraline
+
+Can you send me the data for the plots. I would like to try playing around with the way it is plotted. 
+
+thanks
+
+n
+
+
+On Nov 11, 2016, at 10:35 AM, Qu, Xuan/Sloan Kettering Institute <qux1@mskcc.org> wrote:
+
+Dear Dr. Socci,
+
+Good morning.
+Attached are the plots of TPR and PPV for truth set 48 patients, 33 iterations and in 100% gene lists. It is nice that higher values and increasing patterns  can be seen from the new plots. Most ppv curves for edgeR surpass 0.9 in the end. 
+May I perform the analysis with a larger iteration number(100) next? Or should I also try several different combinations of truth sets and apply these to BRCA data?
+
+Thank you for your time.
+
+Regards,
+Coraline
+<plot_errorbar.zip>
+

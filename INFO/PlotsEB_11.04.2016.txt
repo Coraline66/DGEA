@@ -1,0 +1,90 @@
+Title: Plots with error bars and question about cluster
+Sent:Friday, November 4, 2016 at 4:09 PM
+
+Content:
+
+Dear Dr. Socci,
+
+I would really appreciate it if you install the following packages for
+version R-3.2.2:
+
+DESeq2
+edgeR
+Biobase
+Parallel
+
+Thank you for your time and have a nice weekend.
+
+Regards,
+Coraline
+
+
+On 11/4/16, 1:15 PM, "Socci, Nicholas/Sloan Kettering Institute"
+<soccin@MSKCC.ORG> wrote:
+
+Try to use this version
+
+	/opt/common/CentOS_6-dev/R/R-3.2.2/bin/R
+
+not sure what happened to other.
+
+n
+
+
+Dear Dr. Socci,
+
+Okay, I will convert the plots and try another version of R.
+Thanks for your time
+
+Regards,
+Coraline
+
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Friday, November 4, 2016 at 1:18 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Plot_errorbars & Question about cluster_Coraline
+
+Also can you break the plot up to one per page. Use the PDF format to create a multipage PDF. 
+
+nick
+
+
+On Nov 4, 2016, at 12:48 PM, Qu, Xuan/Sloan Kettering Institute
+<qux1@mskcc.org> wrote:
+Dear Dr. Socci,
+Good afternoon.
+Please see the plots with error bars of TPR and PPV in the attachment.
+I used two ways(standard deviation and standard error) to display the
+error bars.
+During the process of TCGA-SARC analysis, the number of patients
+decreases from 164 to 162 since two of them don¹t have htseq-counts
+files. I haven¹t finished the differential expression analysis of SARC
+as my jobs are no longer able to run on the cluster. The command I used
+is shown as:
+
+bsub -J SARC49_1 -oo SARC49_1.stdout -eo SARC49_1.stderr -cwd
+/ifs/work/qux1/SARC -M 60 -n 10
+"/opt/common/CentOS_6-dev/R/R-3.3.1_v2/bin/Rscript --vanilla
+/ifs/work/qux1/SARC/sarc49_1.R"
+
+Error is shown as:
+
+/opt/common/CentOS_6-dev/R/R-3.3.1/lib64/R/bin/R: line 238:
+/opt/common/CentOS_6-dev/R/R-3.3.1_v2/lib64/R/etc/CC???2/ldpaths:
+Input/output error
+
+When I entered the directory
+³/opt/common/CentOS_6-dev/R/R-3.3.1_v2/bin², I found that files ³R² and
+³Rscript² were modified by user ³kandoth² on Oct 27. I think these
+changes might be the reason for my problem. Could you tell me how I
+should modify my code regarding these changes?
+
+Thank you so much for your time.
+
+Regards,
+Coraline
+<plot_errorbar.zip>
+
+
+
