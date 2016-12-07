@@ -1,0 +1,19 @@
+Title: Plots_(roc & box plot)
+Sent: Friday, October 7, 2016 at 5:32 PM
+
+Content:
+
+Dear Dr. Socci,
+
+Good afternoon.
+Attached is a compressed file of roc plots and box plots of TPR and PPV for both TCGA-BRCA and TCGA-LUAD.  As for the new truth set, I used four different combinations, i.e. 95/100/100, 95/100/90, 90/100/90 and 90/1000/90. The first number represents the percentage of samples used for generating new truth set, the second number represents the run times and the third number represents the percentage of generated gene lists that is occupied by the new truth set. These three parameters are defined as a, b, c for convenience.
+
+According to the plots, some brief conclusions might be drawn. There shows a more dramatic increasing of TPR when variable c is larger, while larger c results in lower PPV.  If we increase the runtime(variable b) from 100 to 1000, then TPR drops to a lower level and PPV climbs to a higher level. Smaller variable a gives rise to higher and more rapidly increasing TPR and lower PPV. 
+
+The corresponding rcode and data will be uploaded to my github next week.
+
+Thank you for your time and have a nice weekend.
+
+Regards,
+Coraline
+
