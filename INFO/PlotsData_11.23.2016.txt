@@ -1,0 +1,40 @@
+Title: Plots using new truth set for BRCA and LUAD
+Sent: Wednesday, November 23, 2016 at 5:28 PM
+
+Content:
+
+Dear Dr. Socci,
+
+A folder named “plots.data_2016.11.23” which contains all plots and corresponding data has been uploaded to the path “/ifs/work/qux1/“ on the cluster. 
+
+As for the sampling of new truth set for BRCA, I used a certain seed to generate 85 indices from the 100 patients for 100 iterations and then perform Deseq2 and edgeR analyses for each iteration.  The new truth set is obtained by comparing the result from analysis of each iteration and original truth set. The R-code files for the sampling of truth set can also be found in the folder above, including some necessary self-defined function files.
+
+The 100 plots correspond to 100 iterations. I have collapsed them into one plot by using their average values. The new plots are located in “/ifs/work/qux1/plots.data_2016.11.23/plots”.
+
+Thanks for your time.
+
+Regards, 
+Coraline
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Wednesday, November 23, 2016 at 1:56 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Plots_updated_Coraline
+
+
+  {Attached are the plots of LUAD and BRCA for 100 iterations. The corresponding data is in another email since there is a size limit for the attachment.}  
+
+Please transfer the data to the cluster computer (LUNA) somewhere in /ifs/work and send me the path. Do not send large data files through Mail. 
+
+  {The indices such as “fdr48_de100_1” represent the case wise FDR values for the first iteration, i.e., fdr48_de100_1[1:100] are the FDR values for the first iteration when n_sample = 3 and fdr48_de100_1[101:200] are the FDR values for the first iteration when n_sample = 4, etc., fdr48_de100_1[1001:1100] are the FDR values for the first iteration when n_sample = 45.} 
+
+The PPV values still do not make sense. 
+
+How are you doing the sampling for the truth set? Can you send me the R-code for the sampling?
+
+Not sure what are the difference in the 100 plots in each file. The curves look nearly identical. You should collapse those into one plot by averaging or accumulating over all the runs maybe?
+
+Thanks
+
+nick
+

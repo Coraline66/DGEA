@@ -1,0 +1,24 @@
+Title: Problem with low replicates
+Sent: Monday, November 21, 2016 at 9:42 AM
+
+Content:
+
+Okay, then I will reset the TPR’s and PPV’s for this case.
+
+Thanks for your time.
+
+Regards, 
+Coraline
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Friday, November 18, 2016 at 6:15 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Question about data_Coraline
+
+There is a problem when I tried to perform the differential analysis to TCGA-BRCA data. Some gene lists are empty after filtering with P_adj < 0.05 and | log_2 FC | > 1 when the sample number n=3. In this case, the corresponding TPR values are all zero and there exist no PPV. Should I remove these empty gene lists to proceed the analysis?
+
+No. That is one of the effects we want to see. That at too low replicates you might actually get nothing. For those cases set TPR=0 and PPV=0
+
+nick
+
+
