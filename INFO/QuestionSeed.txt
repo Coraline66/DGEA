@@ -1,0 +1,23 @@
+Title: Question about seed
+Sent: Tuesday, October 11, 2016 at 4:41 PM
+
+Content:
+
+Okay, I will fix my code and reset the seed then.
+Thank you for your time.
+
+Regards,
+Coraline
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Tuesday, October 11, 2016 at 4:37 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Question about seed_Coraline
+
+ {During the analysis of tcga-brca, I use the same seed in both generating new truth sets and performing differential expression analysis for each case. Does it have any effect on the final result? Should I change to two different seeds?}
+
+
+Not sure but I would use two different seeds in this case. In fact unless you are debugging you should always use a different seed whenever you are calling the seed function. Something based on DATE/TIME so it is never the same. 
+
+n
+

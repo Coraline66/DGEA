@@ -1,0 +1,35 @@
+Title: Problem about bsub command
+Sent: Tuesday, October 18, 2016 at 9:54 AM
+
+Content:
+
+Dear Dr. Socci,
+
+Sorry for the late reply. 
+I didn’t specify the core setting “-n 32” and I will modify my commands and resubmit my jobs later.
+
+Thank you for your time.
+
+Regards,
+Coraline
+
+From: "Socci, Nicholas/Sloan Kettering Institute" <soccin@MSKCC.ORG>
+Date: Friday, October 14, 2016 at 5:50 PM
+To: Xuan Qu <qux1@mskcc.org>
+Subject: Re: Question about seed_Coraline
+
+Coraline,
+
+What is the bsub command you are giving when you run your jobs?
+
+Are us specifying the core setting 
+
+-n 32
+
+you need to do that as your jobs are overloading the cluster. Please stop them and resubmit with 
+
+-n 32
+
+nick
+
+
