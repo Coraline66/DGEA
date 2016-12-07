@@ -28,7 +28,7 @@ Dear Dr. Socci,
 
 Attached is the integrated data for 100 patients(brca). Could you tell me what I should prepare for the next step in advance if the data contains everything needed in the next stage? By the way, since the data was saved via “saveRDS”, it has to be loaded via “readRDS”.
 
-Thank you for your time.
+Thank you for your time
 
 Regards,
 Coraline
