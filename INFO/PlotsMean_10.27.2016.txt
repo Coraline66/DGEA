@@ -1,0 +1,14 @@
+Title: Plots without error bars
+Sent: Thursday, October 27, 2016 at 3:00 PM
+
+Content:
+
+Dear Dr. Socci,
+
+Good afternoon.
+Attached are the plots of TPR and PPV for deseq2 and edger without error bars. It can be seen that TPR shows remarkably high values for TS(48/1000/100)_ LUAD by both deseq2 and edger, where TS represents Truth Set. The lowest curve of TPR is given by either TS(54/100/90) or TS(54/1000/90). A similar result can also be derived for BRCA. On the contrary, we obtain a completely opposite conclusion for PPV. The highest curve of PPV is shown by either TS(54/100/90) or TS(54/1000/90), while the lowest curve arises from TS(48/1000/100). 
+
+Thank you for your time.
+
+Regards,
+Coraline
