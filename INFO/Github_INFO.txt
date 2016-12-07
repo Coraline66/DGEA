@@ -1,0 +1,15 @@
+Title: Github repository "DGEA"
+Sent: Saturday, October 1, 2016 at 10:25 AM
+
+Content:
+
+Dear Dr. Socci,
+
+I have uploaded all relative emails with corresponding titles in a file called “INFO” to my github repository “DGEA”.  Here is the link to “INFO”:
+https://github.com/Coraline66/DGEA/tree/master/INFO
+
+The R code and Rmarkdown files will also be uploaded as soon as I finish compiling them.
+Have a nice weekend.
+
+Regards,
+Coraline
